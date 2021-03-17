@@ -1,3 +1,4 @@
+import "./css/styles.css";
 import menuListMarkup from "./menu";
 
 const menuList = document.querySelector(".js-menu");

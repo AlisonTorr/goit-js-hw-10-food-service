@@ -1,8 +1,9 @@
-import menuTpl from "./tamplates/menu.hbs";
-import menuItems from "../menu.json";
+import menuTpl from './tamplates/menu.hbs';
+import menuItems from './menu.json';
 
-export default function createMenuListMarkup(menuItems) {
-  return menuItems.map((item) => menuTpl(item)).join("");
+function createMenuListMarkup(menuItems) {
+  return menuItems.map(item => menuTpl(item)).join('');
 }
 
-export const menuListMarkup = createMenuListMarkup(menuItems);
+const menuListMarkup = createMenuListMarkup(menuItems);
+export default menuListMarkup;
